@@ -1,14 +1,22 @@
 /*
-Theme Name: Shopera
+Theme Name: Noni Couture Boutique Lion
 Theme URI: http://cohhe.com/project-view/shopera/
 Author: Cohhe
 Author URI: http://cohhe.com/
 Description: Shopera is FREE, clean, modern, responsive and highly customizable WooCommerce theme. It’s perfect for any kind of web shop. It looks great with all types of devices (laptops, tablets and mobiles). You can get more information about Shopera at http://cohhe.com/project-view/shopera/
 Version: 1.3.3
+=======
+Description: Custom wordpress woocommerce theme based off of the Shopera theme by Cohe for the Noni Couture Boutique Website
+Author: kdgwill
+Author URI: kyledgwilliams.com
+Original Author: Cohhe
+Original Author URI: http://cohhe.com/
+Version: 0.1.0
+>>>>>>> Create Initial Noni Couture Theme
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: shopera 
+Text Domain: shopera
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -24,6 +32,12 @@ Shopera is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic
  * http://www.blueprintcss.org/
  *
  * -----------------------------------------------------------------------------
+ */
+/**
+ * Changed background of body .container ul.products li.product
+ * changed color of .site-navigation > div > ul > li > a
+ * That red color is #F45245
+ * main teal color is #79cdcd
  */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
@@ -2019,6 +2033,7 @@ body .container ul.products li.product {
 	font-family: 'Roboto Condensed';
 	margin: 0 0 2em 1%;
 	width: 24%;
+    background: #F5F5F5;
 
 	-webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -2339,7 +2354,7 @@ body .container ul.products li.product .product-info {
 	width: auto;
 	padding: 0;
 	background: #353533;
-	padding: 80px 0 30px;
+	padding: 20px 0 20px;
 }
 
 .site-footer-container footer {
@@ -2550,6 +2565,7 @@ body.slider-off #main-content {
 body.single-product .site-main.container {
 	width: auto;
 	padding: 0;
+    background:#79CDCD
 }
 
 body.single-product #content .product {
@@ -4255,7 +4271,7 @@ body.error404 .search-field {
 	left: 50%;
 	top: 50%;
 	margin-left: -2.5px;
-	background-color: #f45245;
+	background-color: #333;
 	border-radius: 500px;
 	z-index: -1;
 

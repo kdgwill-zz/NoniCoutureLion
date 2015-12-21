@@ -79,8 +79,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div><!-- #product-<?php the_ID(); ?> -->
 	<div class="single-product-sidebar col-sm-3">
-		<h3><?php _e('Recent products', 'shopera'); ?></h3>
-		<?php echo do_shortcode('[recent_products per_page="5" columns="1"]'); ?>
+
+        <?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-6' ); ?>
+        <?php else : ?>
+            <h3><?php _e('Recent products', 'shopera'); ?></h3>
+            <?php echo do_shortcode('[recent_products per_page="5" columns="1"]'); ?>
+        <?php endif; ?>
+    
 	</div>
 	<?php do_action( 'woocommerce_after_single_product_sidebar' ); ?>
 	<div class="clearfix"></div>

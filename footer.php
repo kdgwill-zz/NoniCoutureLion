@@ -22,6 +22,7 @@
 			<div class="site-info col-sm-12 col-md-12 col-lg-12">
 				<div class="site-info-content container">
 					<div class="copyright">
+<!--
 						<?php
 							$copyright = get_theme_mod( 'shopera_copyright' );
 							if ( $copyright ) {
@@ -30,6 +31,8 @@
 						?> 
 						<?php _e( 'Created by', 'shopera' ); ?> <a href="https://cohhe.com/"><?php _e( 'Cohhe', 'shopera' ); ?></a>. 
 						<?php _e( 'Proudly powered by', 'shopera' ); ?> <a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>"><?php _e( 'WordPress', 'shopera' ); ?></a>
+//-->
+                        <?php _e( '&copy;2015 Noni Couture Boutique. All Rights Reserved', 'shopera' ); ?>
 					</div>
 					<?php 
 						$show_scroll_to_top = get_theme_mod( 'shopera_scrolltotop' );

@@ -24,7 +24,7 @@
  * @subpackage Shopera
  * @since Shopera 1.0
  */
-
+    
 /**
  * Set up the content width value based on the theme's design.
  *
