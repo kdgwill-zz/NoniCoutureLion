@@ -3314,6 +3314,11 @@ body .wc-proceed-to-checkout .checkout-button.button {
 	border-color: #f45245;
 }
 
+/*******Changes background for all in cart*********/
+.woocommerce td[class^="product-"]{
+    background: #fff /*#aaf;*/
+}
+
 /* Checkout */
 
 .woocommerce .woocommerce-info {
@@ -3350,11 +3355,17 @@ body.woocommerce-checkout .entry-content .woocommerce textarea {
 	font-size: 13px;
 }
 
+body.woocommerce-checkout .entry-content .woocommerce input,
+body.woocommerce-checkout .entry-content .woocommerce select,
+body.woocommerce-checkout .entry-content .woocommerce textarea {
+    background: #fff 
+}
+
 body.woocommerce-checkout .entry-content .woocommerce textarea {
 	height: auto;
 	position: relative;
 	z-index: 2;
-	background-color: transparent;
+	/**background-color: transparent;*/
 }
 
 body .select2-container .select2-choice {
@@ -3362,7 +3373,7 @@ body .select2-container .select2-choice {
 	border-radius: 0;
 	height: 39px;
 	line-height: 39px;
-	background-color: transparent;
+	/**background-color: transparent;**/
 }
 
 .woocommerce form .form-row.woocommerce-validated .select2-container {
@@ -3415,6 +3426,18 @@ body .select2-search {
 	transition: all 0.3s ease-in-out 0s;
 }
 
+/*Special styling because inconsistant woocommerce labeling and placeholder*/
+label[for^="billing_"],
+label[for="order_comments"]{
+    z-index: 3;
+}
+#billing_address_2.input-text::-webkit-input-placeholder{ opacity: 1; }
+#billing_address_2.input-text::-moz-placeholder{ opacity: 1; }
+#billing_address_2.input-text:-ms-input-placeholder { opacity: 1; }
+.select2-container .select2-choice>.select2-chosen { opacity:1 }
+/*****************/
+
+
 .woocommerce .form-row.input-focused:not(.create-account) label:not(.inline) {
 	top: -25px;
 	left: 3px;
@@ -3453,8 +3476,13 @@ body.woocommerce-page .woocommerce-checkout-review-order-table tfoot tr.order-to
 	color: #333;
 }
 
+body.woocommerce-page .woocommerce-checkout-review-order-table tfoot{
+    background: #fff
+}
+
 body .woocommerce-checkout #payment.woocommerce-checkout-payment {
-	background: rgba(213, 213, 213, 0.3);
+/*    background: rgba(213, 213, 213, 0.3);*/
+    background: white;
 }
 
 body .payment_methods.methods {
@@ -4707,6 +4735,7 @@ body.error404 .search-field {
 .woocommerce form textarea:-ms-input-placeholder {
 	opacity: 0;
 }
+
 
 .woocommerce .form-row:not(.no-border):not(.create-account):not(.place-order) {
 	position: relative;
